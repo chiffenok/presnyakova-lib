@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 import styles from './styles.css'
-import ReactDOM from 'react-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleUp, faAngleDown } from '@fortawesome/free-solid-svg-icons'
-
 
 export class Dropdown extends Component {
   constructor(props) {
@@ -52,7 +50,6 @@ export class Dropdown extends Component {
   }
 
   render() {
-    const { list } = this.props
     const { dropdownOpen, headerTitle } = this.state
     return (
       <div className={styles.dropdownWrapper}>
@@ -63,9 +60,9 @@ export class Dropdown extends Component {
           <div className={styles.dropdownTitle}>
             {headerTitle}
             {dropdownOpen ? (
-              <FontAwesomeIcon icon={faAngleUp} size="2x" />
+              <FontAwesomeIcon icon={faAngleUp} size='2x' />
             ) : (
-              <FontAwesomeIcon icon={faAngleDown} size="2x" />
+              <FontAwesomeIcon icon={faAngleDown} size='2x' />
             )}
           </div>
         </div>

@@ -7,8 +7,8 @@ export const Table = ({ data, dataThead }) => {
       {dataThead && (
         <thead>
           <tr>
-            {dataThead.map((el) => (
-              <th>{el.title}</th>
+            {dataThead.map((el, index) => (
+              <th key={index}>{el.title}</th>
             ))}
           </tr>
         </thead>
@@ -16,9 +16,9 @@ export const Table = ({ data, dataThead }) => {
       <tbody>
         {data.map((row, index) => {
           return (
-            <tr>
+            <tr key={index}>
               {Object.keys(row).map((key, indexInner) => (
-                <td>
+                <td key={indexInner}>
                   <div className={styles.tdTitle}>
                     {dataThead[indexInner].title}
                   </div>
