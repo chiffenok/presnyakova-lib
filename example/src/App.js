@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import { ExampleComponent, Table, Dropdown } from 'presnyakova-lib'
+import { Table, Dropdown } from 'presnyakova-lib'
 import 'presnyakova-lib/dist/index.css'
 
 class App extends Component {
