@@ -32,4 +32,4 @@ export const Table = ({ data, dataThead }) => {
     </table>
   )
 }
-export default Table;
+export default Table
