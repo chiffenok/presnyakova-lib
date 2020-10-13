@@ -44,7 +44,7 @@ export class Dropdown extends Component {
         key={item.id}
         onClick={() => this.selectItem(item.title, item.id, item.key)}
       >
-        {item.title} {item.selected && '-V'}
+        {item.selected ? <b>{item.title}</b> : item.title}
       </li>
     ))
   }

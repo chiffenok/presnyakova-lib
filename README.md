@@ -14,17 +14,22 @@ npm install --save presnyakova-lib
 
 ```jsx
 import React, { Component } from 'react'
+import {Table, Dropdown} from 'presnyakova-lib'
 
-import MyComponent from 'presnyakova-lib'
-import 'presnyakova-lib/dist/index.css'
-
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
 ```
 
-## License
+## To compile lib if changes made
 
-MIT © [Anna Presnyakova](https://github.com/Anna Presnyakova)
+```bash
+npm start
+```
+
+## To see examples of use
+
+```bash
+cd example
+npm start
+```
+
+CI/CD made with github actions ./github/workflows
+

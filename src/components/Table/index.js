@@ -4,7 +4,7 @@ import styles from './styles.css'
 export const Table = ({ data, dataThead }) => {
   return (
     <table className={styles.tableComp}>
-      {dataThead && (
+      {dataThead && dataThead.length > 0 && (
         <thead>
           <tr>
             {dataThead.map((el, index) => (
